@@ -21,14 +21,13 @@ experiments/motivating_example/motivating_plot.py
 ### 2. Robust Linear Regression
 
 The robust linear regression experiments compare tuning instructions suggested by different theories when the goal is to target the sandwich covariance
-
-$$
+$
 \mathcal{S}_{\star}
 =
 \mathcal{J}_{\star}^{-1}
 \mathcal{I}_{\star}
 \mathcal{J}_{\star}^{-1}.
-$$
+$
 
 In particular, we evaluate whether different theory-based choices of the tuning parameters lead SGD/SGLD to a stationary distribution whose covariance matches the desired sandwich covariance.
 
