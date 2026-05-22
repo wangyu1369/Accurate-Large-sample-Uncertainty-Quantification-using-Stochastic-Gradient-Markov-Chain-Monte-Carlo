@@ -10,7 +10,7 @@ The motivating example (Figure 1) illustrates the limitation of continuous-time/
 **Code location:**
 
 ```text
-experiments/motivating_example/
+experiments/motivating_example/motivating_plot.py
 ```
 
 ### 2. Robust Linear Regression
@@ -23,7 +23,7 @@ The simulation experiment uses synthetic misspecified data with outliers.
 **Code location:**
 
 ```text
-experiments/robust_linear_regression/simulation/
+experiments/robust_linear_regression/simulation/robust_linear_regression_simulation.py
 ```
 
 #### 2(b). Real-world Dataset
@@ -33,7 +33,7 @@ The real-world robust linear regression experiment evaluates uncertainty quantif
 **Code location:**
 
 ```text
-experiments/robust_linear_regression/real_data/
+experiments/robust_linear_regression/real_data/robust_regression_boston.py
 ```
 
 ### 3. Poisson Regression
@@ -47,7 +47,7 @@ The simulation experiment uses synthetic well-specified data for Poisson regress
 **Code location:**
 
 ```text
-experiments/poisson_regression/simulation/
+experiments/poisson_regression/simulation/poisson_regression_simulation.py
 ```
 
 #### 3(b). Real-world Dataset
@@ -57,7 +57,7 @@ The real-world Poisson regression experiment evaluates the proposed method on re
 **Code location:**
 
 ```text
-experiments/poisson_regression/real_data/
+experiments/poisson_regression/real_data/poisson_regression_german_data.py
 ```
 
 ---
@@ -71,7 +71,7 @@ This experiment illustrates that the proposed discrete-time covariance character
 **Code location:**
 
 ```text
-experiments/neural_network/
+experiments/neural_network/neural_network.py
 ```
 
 ---
@@ -84,3 +84,4 @@ We empirically validate the Wasserstein bound using Poisson regression in both w
 
 ```text
 experiments/wasserstein_bound/
+```
