@@ -16,7 +16,7 @@ from sklearn.preprocessing import StandardScaler
 # Config
 # ============================================================
 
-CSV_PATH = "Boston.csv"
+CSV_PATH = "boston.csv"
 LOG_TARGET = False
 ADD_INTERCEPT = False
 
