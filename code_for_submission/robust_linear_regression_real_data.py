@@ -216,40 +216,6 @@ def make_table_ci_strings(df_ci, metric, digits=3):
     return pd.DataFrame(out).sort_values(["batch_size", "method"])
 
 # ============================================================
-# Plot
-# ============================================================
-def plot_cov_error_with_cis(df_ci, savepath=None):
-    label_map = {"CT": "CT", "LR+WS": "LR+WS", "DQ+exact": "DQ+exact (ours)"}
-    method_order = ["CT", "LR+WS", "DQ+exact"]
-
-    plt.figure(figsize=(8, 5))
-
-    for method in method_order:
-        sub = df_ci[df_ci["method"] == method].sort_values("batch_size")
-        x = sub["batch_size"].values.astype(float)
-        y = sub["cov_rel_frob_error_mean"].values.astype(float)
-        lo = sub["cov_rel_frob_error_lo"].values.astype(float)
-        hi = sub["cov_rel_frob_error_hi"].values.astype(float)
-        yerr = np.vstack([y - lo, hi - y])
-        plt.errorbar(x, y, yerr=yerr, marker="o", capsize=4, label=label_map[method])
-
-    if log_x_axis:
-        plt.xscale("log")
-    if log_y_axis:
-        plt.yscale("log")
-
-    plt.xlabel("batch size B")
-    plt.ylabel(r"relative covariance error $\|\hat{\Sigma}-\Sigma_\star\|_F/\|\Sigma_\star\|_F$")
-    plt.title("Boston (log loss): covariance error with 95% CIs")
-    plt.grid(True, linestyle="--", alpha=0.6)
-    plt.legend()
-    plt.tight_layout()
-
-    if savepath is not None:
-        plt.savefig(savepath, bbox_inches="tight")
-    plt.show()
-
-# ============================================================
 # MAIN: run reps
 # ============================================================
 all_rows = []
