@@ -85,32 +85,3 @@ We empirically validate the Wasserstein bound using Poisson regression in both w
 ```text
 experiments/wasserstein_bound/
 ```
-
-experiments/
-├── motivating_example/
-│   ├── README.md
-│   └── run_motivating_example.py
-│
-├── robust_linear_regression/
-│   ├── simulation/
-│   │   ├── README.md
-│   │   └── run_simulation.py
-│   └── real_data/
-│       ├── README.md
-│       └── run_real_data.py
-│
-├── poisson_regression/
-│   ├── simulation/
-│   │   ├── README.md
-│   │   └── run_simulation.py
-│   └── real_data/
-│       ├── README.md
-│       └── run_real_data.py
-│
-├── neural_network/
-│   ├── README.md
-│   └── run_neural_network.py
-│
-└── wasserstein_bound/
-    ├── README.md
-    └── run_wasserstein_validation.py
