@@ -78,7 +78,6 @@ experiments/poisson_regression/real_data/poisson_regression_german_data.py
 
 The neural-network experiment evaluates stationary covariance approximation beyond the convex setting. We fit a small neural network and compare the stationary covariance predicted by different theories under a range of fixed learning rates.
 
-The goal is to assess how accurately each theory predicts the empirical stationary covariance of SGD iterates. This experiment illustrates that continuous-time approximations can be accurate at small learning rates but become less reliable as the learning rate increases, while the proposed discrete-time covariance characterization remains informative in a nonconvex model.
 
 **Code location:**
 
