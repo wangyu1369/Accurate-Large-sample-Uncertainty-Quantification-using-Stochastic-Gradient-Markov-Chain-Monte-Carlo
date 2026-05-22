@@ -13,6 +13,8 @@ The motivating example (Figure 1) illustrates the limitation of continuous-time/
 experiments/motivating_example/motivating_plot.py
 ```
 
+---
+
 ### 2. Robust Linear Regression
 
 The robust linear regression experiments evaluate uncertainty quantification under model misspecification. 
@@ -35,6 +37,8 @@ The real-world robust linear regression experiment evaluates uncertainty quantif
 ```text
 experiments/robust_linear_regression/real_data/robust_regression_boston.py
 ```
+
+---
 
 ### 3. Poisson Regression
 
@@ -83,5 +87,5 @@ We empirically validate the Wasserstein bound using Poisson regression in both w
 **Code location:**
 
 ```text
-experiments/wasserstein_bound/
+experiments/wasserstein_bound/wasserstein_bound.py
 ```
