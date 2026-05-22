@@ -5,9 +5,11 @@ This repository contains code for reproducing the main experiments in the paper.
 
 ### 1. Motivating Example
 
-The motivating example illustrates the limitation of continuous-time/SDE-based approximations for fixed-step-size SGD/SGLD. In particular, it compares the stationary covariance predicted by existing continuous-time theory with the empirical stationary covariance observed from discrete-time SGD iterates.
+The motivating example (Figure 1) illustrates the limitation of continuous-time/SDE-based approximations for SGD/SGLD with large batch size (or learning rate).
 
 **Code location:**
 
 ```text
 experiments/motivating_example/
+
+### 2. Robust Linear Regression
