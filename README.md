@@ -98,7 +98,5 @@ We then examine whether the observed Wasserstein distance follows the scaling pr
 **Code location:**
 
 ```text
-experiments/wasserstein_bound/run_wasserstein_validation.py
-```
 experiments/wasserstein_bound/wasserstein_bound.py
 ```
